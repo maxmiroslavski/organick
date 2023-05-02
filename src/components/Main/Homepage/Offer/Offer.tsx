@@ -1,0 +1,58 @@
+// React
+import React from 'react';
+
+// Packages
+import { useQuery } from '@tanstack/react-query';
+import { Link } from 'react-router-dom';
+
+// Components
+import { OfferStyled } from './OfferStyles';
+import { ProductItem } from '../../../UI/ProductItem/ProductItem';
+import { GreenHeading } from '../../../UI/GreenHeading';
+import { Btn } from '../../../UI/Btn';
+
+export const Offer = () => {
+	const { data } = useQuery(['products'], async () => {
+		const res = await fetch(
+			'https://organick-df998-default-rtdb.firebaseio.com/productItems.json'
+		);
+
+		return await res.json();
+	});
+
+	return (
+		<OfferStyled>
+			<div className="description">
+				<div className="">
+					<GreenHeading className="heading">Offer</GreenHeading>
+					<span className="description__text">
+						We Offer Organic For You
+					</span>
+				</div>
+				<Link to="/shop">
+					<Btn
+						textColor="#274C5B"
+						backgroundColor="#EFD372"
+						padding="25px 40px"
+					>
+						View All Product
+					</Btn>
+				</Link>
+			</div>
+
+			<div className="products">
+				{data?.slice(0, 4).map((item: any, i: any) => (
+					<ProductItem
+						key={i}
+						id={item.id}
+						category={item.category}
+						image={item.image}
+						name={item.name}
+						oldPrice={item.oldPrice}
+						newPrice={item.newPrice}
+					/>
+				))}
+			</div>
+		</OfferStyled>
+	);
+};
