@@ -57,7 +57,7 @@ export const AboutUs = () => {
 						</div>
 					</li>
 				</ul>
-				<Link to="/shop" className="link-btn">
+				<Link to="/organick/shop" className="link-btn">
 					<Btn
 						backgroundColor="#274C5B"
 						textColor="#fff"

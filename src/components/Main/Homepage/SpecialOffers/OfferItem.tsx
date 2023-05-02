@@ -16,7 +16,7 @@ export const OfferItem = ({
 	textColor: string;
 }) => {
 	return (
-		<Link to="/shop">
+		<Link to="/organick/shop">
 			<OfferItemStyled
 				backgroundImage={img}
 				titleColor={titleColor}

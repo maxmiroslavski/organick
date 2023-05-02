@@ -15,7 +15,7 @@ export const TopBanner = () => {
 				<h1 className="title__main-text">
 					Choose the best healthier way <br /> of life
 				</h1>
-				<Link to="/about" className="link-btn">
+				<Link to="/organick/about" className="link-btn">
 					<Btn
 						padding="30px 40px"
 						backgroundColor="#EFD372"

@@ -24,12 +24,18 @@ export const Main = () => {
 			{isShown && <Cart />}
 			<Routes>
 				<Route path="/organick/" element={<Homepage />} />
-				<Route path="about" element={<AboutPage />} />
-				<Route path="shop" element={<ShopPage />} />
-				<Route path="news" element={<NewsPage />} />
-				<Route path="contact" element={<Contact />} />
-				<Route path="shop/:name" element={<ShopPageSingle />} />
-				<Route path="news/:name" element={<NewsPageSingle />} />
+				<Route path="/organick/about" element={<AboutPage />} />
+				<Route path="/organick/shop" element={<ShopPage />} />
+				<Route path="/organick/news" element={<NewsPage />} />
+				<Route path="/organick/contact" element={<Contact />} />
+				<Route
+					path="/organick/shop/:name"
+					element={<ShopPageSingle />}
+				/>
+				<Route
+					path="/organick/news/:name"
+					element={<NewsPageSingle />}
+				/>
 			</Routes>
 		</main>
 	);

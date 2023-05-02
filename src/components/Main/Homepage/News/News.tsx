@@ -23,7 +23,7 @@ export const News = () => {
 						Discover weekly content about organic food, & more
 					</SubText>
 				</div>
-				<Link to="/news">
+				<Link to="/organick/news">
 					<Btn
 						backgroundColor="transparent"
 						textColor="#274C5B"
