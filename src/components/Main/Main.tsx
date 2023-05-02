@@ -23,7 +23,7 @@ export const Main = () => {
 			<ScrollToTopButton />
 			{isShown && <Cart />}
 			<Routes>
-				<Route path="/" element={<Homepage />} />
+				<Route path="/organick" element={<Homepage />} />
 				<Route path="about" element={<AboutPage />} />
 				<Route path="shop" element={<ShopPage />} />
 				<Route path="news" element={<NewsPage />} />
