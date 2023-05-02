@@ -1,12 +1,16 @@
+// React
 import React from 'react';
-import { FooterStyled } from './FooterStyles';
-import organickLogo from '../../assets/svg/organick-logo.svg';
+import { Link } from 'react-router-dom';
 
+// Assets
+import organickLogo from '../../assets/svg/organick-logo.svg';
 import instagram from '../../assets/svg/footer-instagram-icon.svg';
 import facebook from '../../assets/svg/footer-facebook-icon.svg';
 import twitter from '../../assets/svg/footer-twitter-icon.svg';
 import pinterest from '../../assets/svg/footer-pinterest-icon.svg';
-import { Link } from 'react-router-dom';
+
+// Components
+import { FooterStyled } from './FooterStyles';
 
 export const Footer = () => {
 	return (

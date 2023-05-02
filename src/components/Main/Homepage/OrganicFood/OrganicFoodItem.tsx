@@ -1,13 +1,11 @@
 import React from 'react';
 import { OrganicFoodItemStyled } from './OrganicFoodStyles';
+import { OrganicFoodItemProps } from './OrganicFood';
 
 export const OrganicFoodItem = ({
 	background,
 	title,
-}: {
-	background: string;
-	title: string;
-}) => {
+}: OrganicFoodItemProps) => {
 	return (
 		<OrganicFoodItemStyled background={background}>
 			<div className="item__title">

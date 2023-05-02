@@ -1,9 +1,14 @@
+// React
 import React from 'react';
+
+// Assets
+import locationIcon from '../../../../assets/svg/contactPage/locationIcon.svg';
+
+// Components
 import { LocationStyled } from './LocationStyles';
 import { GreenHeading } from '../../../UI/GreenHeading';
 import { SubText } from '../../../UI/SubText';
 import { ParagraphText } from '../../../UI/ParagraphText';
-import locationIcon from '../../../../assets/svg/contactPage/locationIcon.svg';
 
 export const Location = () => {
 	return (

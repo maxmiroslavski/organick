@@ -1,15 +1,23 @@
+// React
 import React from 'react';
-import { Backdrop, CartStyled } from './CartStyles';
+
+// Redux
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleCart } from '../../store/uiSlice';
-import { SubText } from '../UI/SubText';
+
+// Packages
 import { motion } from 'framer-motion';
 
+// Assets
 import closeIcon from '../../assets/svg/cross-small-svgrepo-com.svg';
+
+// Components
+import { Backdrop, CartStyled } from './CartStyles';
 import { ListItem } from './ListItem/ListItem';
+import { SubText } from '../UI/SubText';
+
 export const Cart = () => {
 	const dispatch = useDispatch();
-
 	const cartItems = useSelector((state: any) => state.cart.items);
 
 	const total = cartItems.reduce(

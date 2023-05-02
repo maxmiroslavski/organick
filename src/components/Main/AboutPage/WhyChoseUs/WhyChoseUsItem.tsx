@@ -1,15 +1,8 @@
 import React from 'react';
 import { ListItemStyled } from './WhyChoseUsStyles';
+import { WhyChoseUsItemProps } from './WhyChoseUsInterface';
 
-export const WhyChoseUsItem = ({
-	icon,
-	title,
-	text,
-}: {
-	icon: string;
-	title: string;
-	text: string;
-}) => {
+export const WhyChoseUsItem = ({ icon, title, text }: WhyChoseUsItemProps) => {
 	return (
 		<ListItemStyled>
 			<div className="">

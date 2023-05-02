@@ -8,9 +8,9 @@ export const ProductItem = (props: {
 	category: string;
 	image: string;
 	name: string;
-	oldPrice: string;
-	newPrice: string;
-	id: number;
+	oldPrice: number;
+	newPrice: number;
+	id: string;
 }) => {
 	const { category, image, name, oldPrice, newPrice, id } = props;
 	return (

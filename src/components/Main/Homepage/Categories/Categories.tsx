@@ -12,6 +12,9 @@ import { SubText } from '../../../UI/SubText';
 import { ProductItem } from '../../../UI/ProductItem/ProductItem';
 import { Btn } from '../../../UI/Btn';
 
+// Interfaces
+import { ProductItemInterface } from '../../../UI/ProductItem/ProductItemInterface';
+
 export const Categories = () => {
 	const { data } = useQuery(['products'], async () => {
 		const res = await fetch(
@@ -26,17 +29,19 @@ export const Categories = () => {
 			<GreenHeading>Categories</GreenHeading>
 			<SubText>Our Products</SubText>
 			<div className="products">
-				{data?.slice(0, 8).map((item: any, i: number) => (
-					<ProductItem
-						key={i}
-						id={item.id}
-						category={item.category}
-						image={item.image}
-						name={item.name}
-						oldPrice={item.oldPrice}
-						newPrice={item.newPrice}
-					/>
-				))}
+				{data
+					?.slice(0, 8)
+					.map((item: ProductItemInterface, i: number) => (
+						<ProductItem
+							key={i}
+							id={item.id}
+							category={item.category}
+							image={item.image}
+							name={item.name}
+							oldPrice={item.oldPrice}
+							newPrice={item.newPrice}
+						/>
+					))}
 			</div>
 			<Link to="/shop">
 				<Btn

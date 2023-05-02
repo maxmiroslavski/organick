@@ -1,11 +1,18 @@
+// React
 import React from 'react';
-import { WhyChoseUsStyled } from './WhyChoseUsStyles';
-import { GreenHeading } from '../../../UI/GreenHeading';
-import { SubText } from '../../../UI/SubText';
+
+// Assets
 import greensImane from '../../../../assets/svg/about-us-page-greens.jpg';
 import greenCircle from '../../../../assets/svg/green-circe-icon.svg';
-import { WhyChoseUsItem } from './WhyChoseUsItem';
+
+// Data
 import { WhyChoseUsData } from './WhyChoseUsData';
+
+// Components
+import { GreenHeading } from '../../../UI/GreenHeading';
+import { WhyChoseUsStyled } from './WhyChoseUsStyles';
+import { WhyChoseUsItem } from './WhyChoseUsItem';
+import { SubText } from '../../../UI/SubText';
 
 export const WhyChoseUs = () => {
 	return (

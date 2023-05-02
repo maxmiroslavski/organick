@@ -1,28 +1,32 @@
+// React
 import React from 'react';
-import { ListItemStyled } from './ListItemStyles';
-import plusIcon from '../../../assets/svg/plusIcon.svg';
-import minusIcon from '../../../assets/svg/minusIcon.svg';
-import { SubText } from '../../UI/SubText';
+
+// Redux
 import { useDispatch } from 'react-redux';
 import { addItem, removeAllItems, removeItem } from '../../../store/cartSlice';
-import deleteCart from '../../../assets/svg/trash-svgrepo-com.svg';
+
+// Packages
 import { motion } from 'framer-motion';
+
+// Assets
+import plusIcon from '../../../assets/svg/plusIcon.svg';
+import minusIcon from '../../../assets/svg/minusIcon.svg';
+import deleteCart from '../../../assets/svg/trash-svgrepo-com.svg';
+
+// Components
+import { ListItemStyled } from './ListItemStyles';
+import { SubText } from '../../UI/SubText';
+
+// Interfaces
+import { ListItemProps } from '../CartInterface';
 
 export const ListItem = ({
 	id,
 	image,
 	itemAmount,
 	name,
-	price,
 	totalPrice,
-}: {
-	id: string;
-	image: string;
-	itemAmount: number;
-	name: string;
-	price: number;
-	totalPrice: string;
-}) => {
+}: ListItemProps) => {
 	const dispatch = useDispatch();
 	return (
 		<ListItemStyled background={image}>

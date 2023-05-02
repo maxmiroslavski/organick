@@ -1,17 +1,19 @@
+// React
 import React from 'react';
-import { ContactInfoStyled } from './ContactInfoStyles';
+
+// Assets
 import bananaImage from '../../../../assets/img/contact/contactBananaImage.jpg';
-import { SubText } from '../../../UI/SubText';
-import { ParagraphText } from '../../../UI/ParagraphText';
-
 import emailIcon from '../../../../assets/svg/contactPage/contactMessageIcon.svg';
-
 import phoneIcon from '../../../../assets/svg/contactPage/contactPhoneIcon.svg';
-
 import instagram from '../../../../assets/svg/contactPage/contactInstagram.svg';
 import facebook from '../../../../assets/svg/contactPage/contactFacebook.svg';
 import tweeter from '../../../../assets/svg/contactPage/contactTweeter.svg';
 import pinterest from '../../../../assets/svg/contactPage/contactPinterest.svg';
+
+// Components
+import { ContactInfoStyled } from './ContactInfoStyles';
+import { SubText } from '../../../UI/SubText';
+import { ParagraphText } from '../../../UI/ParagraphText';
 
 export const ContactInfo = () => {
 	return (

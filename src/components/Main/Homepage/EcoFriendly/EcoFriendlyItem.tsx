@@ -1,7 +1,7 @@
 import React from 'react';
+import { EcoFriendlyItemProps } from './EcoFriendlyInterface';
 
-export const EcoFriendlyItem = (props: { heading: string; text: string }) => {
-	const { heading, text } = props;
+export const EcoFriendlyItem = ({ heading, text }: EcoFriendlyItemProps) => {
 	return (
 		<li className="list__item">
 			<span className="item__heading">{heading}</span>

@@ -1,16 +1,16 @@
+// React
 import React from 'react';
-import { FormStyled } from './FormStyles';
+
+// Packages
 import { z, ZodType } from 'zod';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 
-interface FormData {
-	fullName: string;
-	email: string;
-	company: string;
-	subject: string;
-	message: string;
-}
+// Component
+import { FormStyled } from './FormStyles';
+
+// Interfaces
+import { FormData } from './FormInterface';
 
 export const Form = () => {
 	const schema: ZodType<FormData> = z.object({

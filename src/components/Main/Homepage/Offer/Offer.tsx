@@ -10,6 +10,7 @@ import { OfferStyled } from './OfferStyles';
 import { ProductItem } from '../../../UI/ProductItem/ProductItem';
 import { GreenHeading } from '../../../UI/GreenHeading';
 import { Btn } from '../../../UI/Btn';
+import { ProductItemInterface } from '../../../UI/ProductItem/ProductItemInterface';
 
 export const Offer = () => {
 	const { data } = useQuery(['products'], async () => {
@@ -41,7 +42,7 @@ export const Offer = () => {
 			</div>
 
 			<div className="products">
-				{data?.slice(0, 4).map((item: any, i: any) => (
+				{data?.slice(0, 4).map((item: ProductItemInterface, i: any) => (
 					<ProductItem
 						key={i}
 						id={item.id}
