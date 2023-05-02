@@ -1,6 +1,7 @@
 import { SpecialOffersStyled } from './SpecialOffersStyles';
 import { OfferItem } from './OfferItem';
 import { useQuery } from '@tanstack/react-query';
+import { OfferDataInterface } from './SpecialOffersInterface';
 
 export const SpecialOffers = () => {
 	const { data } = useQuery(['offers'], async () => {
@@ -12,7 +13,7 @@ export const SpecialOffers = () => {
 
 	return (
 		<SpecialOffersStyled>
-			{data?.map((offer: any, i: any) => (
+			{data?.map((offer: OfferDataInterface, i: any) => (
 				<OfferItem
 					key={i}
 					img={offer.img}

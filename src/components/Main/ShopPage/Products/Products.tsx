@@ -2,6 +2,7 @@ import React from 'react';
 import { ProductsStyled } from './ProductsStyles';
 import { ProductItem } from '../../../UI/ProductItem/ProductItem';
 import { useQuery } from '@tanstack/react-query';
+import { ProductItemInterface } from '../../../UI/ProductItem/ProductItemInterface';
 
 export const Products = () => {
 	const { data } = useQuery(['products'], async () => {
@@ -13,7 +14,7 @@ export const Products = () => {
 	});
 	return (
 		<ProductsStyled>
-			{data?.map((item: any, i: number) => (
+			{data?.map((item: ProductItemInterface, i: number) => (
 				<ProductItem
 					key={i}
 					id={item.id}

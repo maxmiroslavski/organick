@@ -1,6 +1,6 @@
 import React from 'react';
 import { OrganicFoodItemStyled } from './OrganicFoodStyles';
-import { OrganicFoodItemProps } from './OrganicFood';
+import { OrganicFoodItemProps } from './OrganicFoodInterface';
 
 export const OrganicFoodItem = ({
 	background,

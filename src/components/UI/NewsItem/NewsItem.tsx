@@ -3,16 +3,16 @@ import person from '../../../assets/svg/person-icon.svg';
 import { Btn } from '../Btn';
 import { NewsItemStyled } from './NewsItemStyles';
 import { Link } from 'react-router-dom';
+import { NewsItemProps } from './NewsItemInterface';
 
-export const NewsItem = (props: {
-	backgroundImage: string;
-	date: string;
-	author: string;
-	title: string;
-	text: string;
-	id: string | number;
-}) => {
-	const { backgroundImage, date, author, title, text, id } = props;
+export const NewsItem = ({
+	backgroundImage,
+	date,
+	author,
+	title,
+	text,
+	id,
+}: NewsItemProps) => {
 	return (
 		<NewsItemStyled backgroundImage={backgroundImage}>
 			<div className="item__date">{date}</div>

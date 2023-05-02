@@ -1,7 +1,7 @@
 import React from 'react';
+import { AchivmentItemProps } from './TestimonialInterface';
 
-export const AchivmentItem = (props: { number: string; comment: string }) => {
-	const { number, comment } = props;
+export const AchivmentItem = ({ number, comment }: AchivmentItemProps) => {
 	return (
 		<div className="achivments__item">
 			<span className="item__number">{number}</span>

@@ -2,9 +2,10 @@ import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { NewsItem } from '../../../UI/NewsItem/NewsItem';
 import { AllNewsStyled } from './AllNewsStyles';
+import { NewsItemInterface } from '../../../UI/NewsItem/NewsItemInterface';
 
 export const AllNews = () => {
-	const { data, isLoading } = useQuery(['news'], async () => {
+	const { data } = useQuery(['news'], async () => {
 		const res = await fetch(
 			'https://organick-df998-default-rtdb.firebaseio.com/news.json'
 		);
@@ -13,7 +14,7 @@ export const AllNews = () => {
 	});
 	return (
 		<AllNewsStyled>
-			{data?.map((item: any, i: number) => (
+			{data?.map((item: NewsItemInterface, i: number) => (
 				<NewsItem
 					key={i}
 					backgroundImage={item.image}

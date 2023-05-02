@@ -7,14 +7,19 @@ import { Link } from 'react-router-dom';
 // Components
 import { OfferItemStyled, SpecialOffersStyled } from './SpecialOffersStyles';
 
-export const OfferItem = (props: {
+export const OfferItem = ({
+	img,
+	title,
+	titleColor,
+	text,
+	textColor,
+}: {
 	img: string;
 	title: string;
 	titleColor: string;
 	text: string;
 	textColor: string;
 }) => {
-	const { img, title, titleColor, text, textColor } = props;
 	return (
 		<Link to="/shop">
 			<OfferItemStyled

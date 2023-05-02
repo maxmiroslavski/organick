@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom';
 import personIcon from '../../../../assets/svg/person-icon.svg';
 import { SubText } from '../../../UI/SubText';
 import { ParagraphText } from '../../../UI/ParagraphText';
+import { NewsItemInterface } from '../../../UI/NewsItem/NewsItemInterface';
 
 export const PostNews = () => {
 	const params = useParams();
@@ -20,7 +21,7 @@ export const PostNews = () => {
 
 	if (!isLoading) {
 		const [{ author, description, fullDate, image, title }] = data.filter(
-			(item: any) => item.id === params.name
+			(item: NewsItemInterface) => item.id === params.name
 		);
 
 		return (

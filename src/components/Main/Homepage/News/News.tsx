@@ -13,7 +13,7 @@ import { Btn } from '../../../UI/Btn';
 import { NewsItem } from '../../../UI/NewsItem/NewsItem';
 
 // Interfaces
-import { newsItem } from './NewsInterface';
+import { NewsItemInterface } from '../../../UI/NewsItem/NewsItemInterface';
 
 export const News = () => {
 	const { data } = useQuery(['news'], async () => {
@@ -45,7 +45,7 @@ export const News = () => {
 			</div>
 
 			<div className="news">
-				{data?.slice(0, 2).map((item: newsItem, i: number) => (
+				{data?.slice(0, 2).map((item: NewsItemInterface, i: number) => (
 					<NewsItem
 						key={i}
 						backgroundImage={item.image}

@@ -1,4 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, {
+	useState,
+	useEffect,
+	ChangeEvent,
+	FormEventHandler,
+} from 'react';
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { ShopPageSingleProductStyled } from './ShopPageSingleProductStyles';
@@ -7,6 +12,7 @@ import { Btn } from '../../../UI/Btn';
 import { ParagraphText } from '../../../UI/ParagraphText';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../../../../store/cartSlice';
+import { ProductItemInterface } from '../../../UI/ProductItem/ProductItemInterface';
 
 export const ShopPageSingleProduct = () => {
 	const dispatch = useDispatch();
@@ -26,10 +32,10 @@ export const ShopPageSingleProduct = () => {
 
 	if (!isLoading) {
 		const [{ category, image, name, newPrice, oldPrice, id }] = data.filter(
-			(item: any) => item.id === params.name
+			(item: ProductItemInterface) => item.id === params.name
 		);
 
-		const addToCartHandler = (e: any) => {
+		const addToCartHandler: FormEventHandler = (e) => {
 			e.preventDefault();
 
 			const itemAmountNum = +itemAmount;
@@ -71,9 +77,9 @@ export const ShopPageSingleProduct = () => {
 									className="form__input"
 									type="number"
 									min={1}
-									onChange={(e: any) =>
-										setItemAmount(e.target.value)
-									}
+									onChange={(
+										e: ChangeEvent<HTMLInputElement>
+									) => setItemAmount(+e.target.value)}
 									value={itemAmount}
 								/>
 								<Btn
