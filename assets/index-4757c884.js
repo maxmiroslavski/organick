@@ -2619,7 +2619,7 @@ Error generating stack: `+s.message+`
 	img {
 		width: 80%;
 	}
-`,p4=()=>{const e=Rh(t=>t.ui.isShown);return T("main",{children:[p(pA,{}),p(f4,{}),e&&p(c4,{}),T(Gb,{children:[p(Hn,{path:"/organick",element:p(_R,{})}),p(Hn,{path:"about",element:p(GR,{})}),p(Hn,{path:"shop",element:p(eA,{})}),p(Hn,{path:"news",element:p(hA,{})}),p(Hn,{path:"contact",element:p(G5,{})}),p(Hn,{path:"shop/:name",element:p(uA,{})}),p(Hn,{path:"news/:name",element:p(t4,{})})]})]})},m4="/organick/assets/footer-instagram-icon-f6a6cad6.svg",g4="/organick/assets/footer-facebook-icon-c356aaa0.svg",y4="/organick/assets/footer-twitter-icon-4fe074ab.svg",v4="/organick/assets/footer-pinterest-icon-9df926a8.svg",x4=de.div`
+`,p4=()=>{const e=Rh(t=>t.ui.isShown);return T("main",{children:[p(pA,{}),p(f4,{}),e&&p(c4,{}),T(Gb,{children:[p(Hn,{path:"/organick/",element:p(_R,{})}),p(Hn,{path:"about",element:p(GR,{})}),p(Hn,{path:"shop",element:p(eA,{})}),p(Hn,{path:"news",element:p(hA,{})}),p(Hn,{path:"contact",element:p(G5,{})}),p(Hn,{path:"shop/:name",element:p(uA,{})}),p(Hn,{path:"news/:name",element:p(t4,{})})]})]})},m4="/organick/assets/footer-instagram-icon-f6a6cad6.svg",g4="/organick/assets/footer-facebook-icon-c356aaa0.svg",y4="/organick/assets/footer-twitter-icon-4fe074ab.svg",v4="/organick/assets/footer-pinterest-icon-9df926a8.svg",x4=de.div`
 	margin: 110px 0 70px;
 	display: flex;
 	justify-content: center;
