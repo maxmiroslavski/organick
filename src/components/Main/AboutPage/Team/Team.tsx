@@ -1,10 +1,5 @@
-// React
 import React from 'react';
-
-// Data
 import { teamData } from './TeamData';
-
-// Components
 import { TeamStyled } from './TeamStyles';
 import { GreenHeading } from '../../../UI/GreenHeading';
 import { SubText } from '../../../UI/SubText';

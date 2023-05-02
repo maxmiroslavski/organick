@@ -6,7 +6,7 @@ import { OfferDataInterface } from './SpecialOffersInterface';
 export const SpecialOffers = () => {
 	const { data } = useQuery(['offers'], async () => {
 		const res = await fetch(
-			'https://organick-df998-default-rtdb.firebaseio.com/offerData.json'
+			`${import.meta.env.VITE_DATABASE}/offerData.json`
 		);
 		return await res.json();
 	});

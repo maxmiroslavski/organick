@@ -1,16 +1,9 @@
-// React
 import React from 'react';
-
-// Assets
 import ecoFriendly from '../../../../assets/img/eco-friendly-image.jpg';
-
-// Components
 import { EcoFriendlyStyled } from './EcoFriendlyStyles';
 import { GreenHeading } from '../../../UI/GreenHeading';
 import { SubText } from '../../../UI/SubText';
 import { EcoFriendlyItem } from './EcoFriendlyItem';
-
-// Data
 import { ecoFriendlyData } from '../../../../data/homepage/ecoFriendlyData';
 
 export const EcoFriendly = () => {

@@ -1,13 +1,8 @@
-// React
 import React from 'react';
-
-// Components
 import { TestimonialStyled } from './TestimonialStyles';
 import { GreenHeading } from '../../../UI/GreenHeading';
 import { SubText } from '../../../UI/SubText';
 import { AchivmentItem } from './AchivmentItem';
-
-// Assets
 import customer from '../../../../assets/img/sara-taylor.jpg';
 import ratingStar from '../../../../assets/svg/star-icon.svg';
 import { ParagraphText } from '../../../UI/ParagraphText';

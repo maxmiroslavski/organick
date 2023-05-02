@@ -1,19 +1,10 @@
-// React
 import React, { useState } from 'react';
-
-// Redux
 import { useDispatch } from 'react-redux';
 import { toggleCart } from '../../store/uiSlice';
-
-// Packages
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-
-// Assets
 import burgerMenu from '../../assets/svg/burger-menu-svgrepo-com.svg';
 import closeIcon from '../../assets/svg/close-md-svgrepo-com.svg';
-
-// Components
 import { HeaderResponsiveStyled } from './HeaderResponsiveStyles';
 import { HeaderLogo } from '../UI/HeaderLogo';
 

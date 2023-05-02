@@ -1,11 +1,6 @@
-// React
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-// Components
 import { HeaderStyled } from './HeaderStyles';
-
-// Assets
 import { HeaderResponsive } from './HeaderResponsive';
 import { HeaderLogo } from '../UI/HeaderLogo';
 import { Cart } from '../UI/Cart';

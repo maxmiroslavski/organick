@@ -22,7 +22,7 @@ export const ShopPageSingleProduct = () => {
 	const params = useParams();
 	const { data, isLoading } = useQuery(['item'], async () => {
 		const res = await fetch(
-			`https://organick-df998-default-rtdb.firebaseio.com/productItems.json`
+			`${import.meta.env.VITE_DATABASE}/productItems.json`
 		);
 
 		return await res.json();

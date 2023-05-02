@@ -11,13 +11,9 @@ import { NewsItemInterface } from '../../../UI/NewsItem/NewsItemInterface';
 export const PostNews = () => {
 	const params = useParams();
 	const { data, isLoading } = useQuery(['news'], async () => {
-		const res = await fetch(
-			'https://organick-df998-default-rtdb.firebaseio.com/news.json'
-		);
+		const res = await fetch(`${import.meta.env.VITE_DATABASE}/news.json`);
 		return res.json();
 	});
-
-	console.log(data);
 
 	if (!isLoading) {
 		const [{ author, description, fullDate, image, title }] = data.filter(

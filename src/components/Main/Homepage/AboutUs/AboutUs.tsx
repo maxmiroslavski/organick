@@ -1,18 +1,9 @@
-// React
 import React from 'react';
-
-// Packages
 import { Link } from 'react-router-dom';
-
-// Components
 import { AboutUsStyled } from './AboutUsStyles';
-
-// Assets
 import fruitsImage from '../../../../assets/png/homepage/aboutUsFruitImage.jpg';
 import organicFoods from '../../../../assets/svg/organic-food-icon.svg';
 import qulityStandard from '../../../../assets/svg/quality-standards-icon.svg';
-
-// Components
 import { Btn } from '../../../UI/Btn';
 import { GreenHeading } from '../../../UI/GreenHeading';
 import { SubText } from '../../../UI/SubText';

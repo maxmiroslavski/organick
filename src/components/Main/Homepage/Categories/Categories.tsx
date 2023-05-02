@@ -1,24 +1,17 @@
-// React
 import React from 'react';
-
-// Packages
 import { useQuery } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
-
-// Components
 import { CategoriesStyled } from './CategoriesStyles';
 import { GreenHeading } from '../../../UI/GreenHeading';
 import { SubText } from '../../../UI/SubText';
 import { ProductItem } from '../../../UI/ProductItem/ProductItem';
 import { Btn } from '../../../UI/Btn';
-
-// Interfaces
 import { ProductItemInterface } from '../../../UI/ProductItem/ProductItemInterface';
 
 export const Categories = () => {
 	const { data } = useQuery(['products'], async () => {
 		const res = await fetch(
-			'https://organick-df998-default-rtdb.firebaseio.com/productItems.json'
+			`${import.meta.env.VITE_DATABASE}/productItems.json`
 		);
 
 		return await res.json();

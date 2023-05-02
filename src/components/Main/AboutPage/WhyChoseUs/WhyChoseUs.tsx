@@ -1,14 +1,7 @@
-// React
 import React from 'react';
-
-// Assets
 import greensImane from '../../../../assets/svg/about-us-page-greens.jpg';
 import greenCircle from '../../../../assets/svg/green-circe-icon.svg';
-
-// Data
 import { WhyChoseUsData } from './WhyChoseUsData';
-
-// Components
 import { GreenHeading } from '../../../UI/GreenHeading';
 import { WhyChoseUsStyled } from './WhyChoseUsStyles';
 import { WhyChoseUsItem } from './WhyChoseUsItem';

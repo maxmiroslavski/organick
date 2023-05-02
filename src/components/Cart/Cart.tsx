@@ -1,17 +1,8 @@
-// React
 import React from 'react';
-
-// Redux
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleCart } from '../../store/uiSlice';
-
-// Packages
 import { motion } from 'framer-motion';
-
-// Assets
 import closeIcon from '../../assets/svg/cross-small-svgrepo-com.svg';
-
-// Components
 import { Backdrop, CartStyled } from './CartStyles';
 import { ListItem } from './ListItem/ListItem';
 import { SubText } from '../UI/SubText';

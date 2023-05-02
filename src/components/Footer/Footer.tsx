@@ -1,15 +1,10 @@
-// React
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-// Assets
 import organickLogo from '../../assets/svg/organick-logo.svg';
 import instagram from '../../assets/svg/footer-instagram-icon.svg';
 import facebook from '../../assets/svg/footer-facebook-icon.svg';
 import twitter from '../../assets/svg/footer-twitter-icon.svg';
 import pinterest from '../../assets/svg/footer-pinterest-icon.svg';
-
-// Components
 import { FooterStyled } from './FooterStyles';
 
 export const Footer = () => {

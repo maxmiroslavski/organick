@@ -1,13 +1,8 @@
-// React
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-// Assets
 import tractorIcon from '../../../../assets/svg/tractor-icon.svg';
 import fabric from '../../../../assets/svg/fabric-icon.svg';
 import veggie from '../../../../assets/png/aboutVeggie.png';
-
-// Components
 import { AboutUsStyled } from './AboutUsStyles';
 import { GreenHeading } from '../../../UI/GreenHeading';
 import { SubText } from '../../../UI/SubText';

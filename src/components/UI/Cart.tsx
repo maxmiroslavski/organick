@@ -11,7 +11,12 @@ export const Cart = () => {
 	const cartAmount = useSelector((state: any) => state.cart.items);
 
 	const itemCount = cartAmount.reduce(
-		(acc: any, currVal: any) => acc + currVal.itemAmount,
+		(
+			acc: number,
+			currVal: {
+				itemAmount: number;
+			}
+		) => acc + currVal.itemAmount,
 		0
 	);
 

@@ -1,23 +1,12 @@
-// React
 import React from 'react';
-
-// Redux
 import { useDispatch } from 'react-redux';
 import { addItem, removeAllItems, removeItem } from '../../../store/cartSlice';
-
-// Packages
 import { motion } from 'framer-motion';
-
-// Assets
 import plusIcon from '../../../assets/svg/plusIcon.svg';
 import minusIcon from '../../../assets/svg/minusIcon.svg';
 import deleteCart from '../../../assets/svg/trash-svgrepo-com.svg';
-
-// Components
 import { ListItemStyled } from './ListItemStyles';
 import { SubText } from '../../UI/SubText';
-
-// Interfaces
 import { ListItemProps } from '../CartInterface';
 
 export const ListItem = ({

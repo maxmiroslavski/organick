@@ -1,15 +1,8 @@
-// React
 import React from 'react';
-
-// Packages
 import { z, ZodType } from 'zod';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-
-// Component
 import { FormStyled } from './FormStyles';
-
-// Interfaces
 import { FormData } from './FormInterface';
 
 export const Form = () => {

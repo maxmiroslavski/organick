@@ -1,25 +1,16 @@
-// React
 import React from 'react';
-
-// Packages
 import { useQuery } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
-
-// Components
 import { NewsStyled } from './NewsStyles';
 import { GreenHeading } from '../../../UI/GreenHeading';
 import { SubText } from '../../../UI/SubText';
 import { Btn } from '../../../UI/Btn';
 import { NewsItem } from '../../../UI/NewsItem/NewsItem';
-
-// Interfaces
 import { NewsItemInterface } from '../../../UI/NewsItem/NewsItemInterface';
 
 export const News = () => {
 	const { data } = useQuery(['news'], async () => {
-		const res = await fetch(
-			'https://organick-df998-default-rtdb.firebaseio.com/news.json'
-		);
+		const res = await fetch(`${import.meta.env.VITE_DATABASE}/news.json`);
 
 		return await res.json();
 	});

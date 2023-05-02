@@ -1,10 +1,5 @@
-// React
 import React from 'react';
-
-// Packages
 import { Link } from 'react-router-dom';
-
-// Components
 import { OfferItemStyled, SpecialOffersStyled } from './SpecialOffersStyles';
 
 export const OfferItem = ({

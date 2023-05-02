@@ -6,9 +6,7 @@ import { NewsItemInterface } from '../../../UI/NewsItem/NewsItemInterface';
 
 export const AllNews = () => {
 	const { data } = useQuery(['news'], async () => {
-		const res = await fetch(
-			'https://organick-df998-default-rtdb.firebaseio.com/news.json'
-		);
+		const res = await fetch(`${import.meta.env.VITE_DATABASE}/news.json`);
 
 		return await res.json();
 	});

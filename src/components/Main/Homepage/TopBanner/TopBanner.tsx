@@ -1,8 +1,5 @@
-// React
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-// Components
 import { TopBannerStyled } from './TopBannerStyles';
 import { Btn } from '../../../UI/Btn';
 import { GreenHeading } from '../../../UI/GreenHeading';
