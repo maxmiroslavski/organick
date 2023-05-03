@@ -18,7 +18,7 @@ export const Header = () => {
 					<nav className="menu__navbar">
 						<ul className="navbar__list">
 							<li className="list__item">
-								<Link className="item__link" to="/organick/">
+								<Link className="item__link" to="/">
 									Home
 								</Link>
 							</li>
