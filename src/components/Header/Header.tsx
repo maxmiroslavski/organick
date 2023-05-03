@@ -11,7 +11,7 @@ export const Header = () => {
 			<HeaderResponsive />
 			<HeaderStyled>
 				<div className="menu">
-					<Link to="/organick/" className="menu__header-logo">
+					<Link to="/" className="menu__header-logo">
 						<HeaderLogo />
 					</Link>
 
@@ -23,34 +23,22 @@ export const Header = () => {
 								</Link>
 							</li>
 							<li className="list__item">
-								<Link
-									className="item__link"
-									to="/organick/about"
-								>
+								<Link className="item__link" to="/about">
 									About
 								</Link>
 							</li>
 							<li className="list__item">
-								<Link
-									className="item__link"
-									to="/organick/shop"
-								>
+								<Link className="item__link" to="/shop">
 									Shop
 								</Link>
 							</li>
 							<li className="list__item">
-								<Link
-									className="item__link"
-									to="/organick/news"
-								>
+								<Link className="item__link" to="/news">
 									News
 								</Link>
 							</li>
 							<li className="list__item">
-								<Link
-									className="item__link"
-									to="/organick/contact"
-								>
+								<Link className="item__link" to="/contact">
 									Contact
 								</Link>
 							</li>
