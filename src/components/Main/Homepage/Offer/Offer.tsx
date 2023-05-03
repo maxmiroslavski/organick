@@ -25,7 +25,7 @@ export const Offer = () => {
 						We Offer Organic For You
 					</span>
 				</div>
-				<Link to="/organick/shop">
+				<Link to="/shop">
 					<Btn
 						textColor="#274C5B"
 						backgroundColor="#EFD372"

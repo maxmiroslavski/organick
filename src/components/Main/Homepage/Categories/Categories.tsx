@@ -36,7 +36,7 @@ export const Categories = () => {
 						/>
 					))}
 			</div>
-			<Link to="/organick/shop">
+			<Link to="/shop">
 				<Btn
 					textColor="#fff"
 					backgroundColor="#274C5B"

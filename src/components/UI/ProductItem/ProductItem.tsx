@@ -14,7 +14,7 @@ export const ProductItem = (props: {
 }) => {
 	const { category, image, name, oldPrice, newPrice, id } = props;
 	return (
-		<Link to={'/organick/shop/' + id}>
+		<Link to={'/shop/' + id}>
 			<ProductItemStyled background={image}>
 				<div className="item__category">{category}</div>
 				<div className="item__description">

@@ -25,7 +25,7 @@ export const NewsItem = ({
 				<h3 className="content__title">{title}</h3>
 
 				<p className="content__text">{text}</p>
-				<Link to={'/organick/news/' + id}>
+				<Link to={'/news/' + id}>
 					<Btn
 						backgroundColor="#EFD372"
 						textColor="#274C5B"
